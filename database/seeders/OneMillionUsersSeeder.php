@@ -14,9 +14,12 @@ class OneMillionUsersSeeder extends Seeder
     protected static $chunk_size = 1000;
 
     /**
-     * Create a million users quickly (~5 minutes)
+     * Create 1-million users quickly (~5 minutes)
      * in non-production environments such as
      * local and staging environments.
+     * 
+     * To do this, we implement chunking and database transactions
+     * to speed up the process significantly and reliably.
      */
     public function run(): void
     {
