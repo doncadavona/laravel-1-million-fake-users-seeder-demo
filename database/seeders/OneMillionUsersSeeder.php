@@ -9,8 +9,15 @@ use Illuminate\Support\Facades\DB;
 
 class OneMillionUsersSeeder extends Seeder
 {
+    /**
+     * The number of fake users to create.
+     */
     protected static $users_count = 1000000;
 
+    /**
+     * The number of fake users to chunk
+     * based on the users count.
+     */
     protected static $chunk_size = 1000;
 
     /**
