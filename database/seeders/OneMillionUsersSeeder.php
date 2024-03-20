@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\DB;
 
 class OneMillionUsersSeeder extends Seeder
 {
-    protected static $users_count = 1000;
+    protected static $users_count = 1000000;
 
     protected static $chunk_size = 1000;
 
