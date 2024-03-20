@@ -23,8 +23,6 @@ class OneMillionUsersSeeder extends Seeder
      */
     public function run(): void
     {
-        return;
-
         if (app()->environment() == 'production') {
             return;
         }
